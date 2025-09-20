@@ -13,3 +13,38 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Account{
+  userId String @id @default(uuid())
+  name String
+  email String @unique
+
+  User User[]
+}
+
+model User{
+  userName String @unique
+  id String @unique
+  account Account @relation(fields: [id], references: [userId])
+  bio String?
+  image String?
+  buttonStyle String @default("rounded-md")
+
+  Links Links[]
+}
+
+
+model Links{
+  id String @id @default(uuid())
+  url String
+  title String
+  archived Boolean @default(false)
+  order Int
+  isSocial Boolean @default(false)
+  clicks Int @default(0)
+  userId String
+  User User @relation(fields: [userId], references: [id])
+
+
+  @@index([userId])
+}
