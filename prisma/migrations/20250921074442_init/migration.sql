@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "public"."Account" ADD CONSTRAINT "Account_pkey" PRIMARY KEY ("id");
+
+-- AlterTable
+ALTER TABLE "public"."User" ADD CONSTRAINT "User_pkey" PRIMARY KEY ("id");
