@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <Container>
       <section className="font-gist  flex items-center justify-center h-screen px-4">
-        <div className="bg-white border-1 shadow-lg rounded-2xl p-8 w-full max-w-lg text-center space-y-8">
+        <div className="bg-white border-1 rounded-2xl p-8 w-full max-w-lg text-center space-y-8">
           {/* Logo */}
           <div className="flex justify-center">
             <Image src="/logo.png" alt="Ossean Logo" width={56} height={56} />

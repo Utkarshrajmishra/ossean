@@ -3,7 +3,7 @@ import Register from "@/components/onboarding/register"
 const Page = () => {
   return (
     <div className="min-h-screen w-full bg-midnight relative overflow-hidden">
-      {/* Bottom Fade Grid Background */}
+      {/* Top Fade Grid Background */}
       <div
         className="absolute inset-0 z-0"
         style={{
@@ -13,9 +13,9 @@ const Page = () => {
           `,
           backgroundSize: "20px 30px",
           WebkitMaskImage:
-            "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
+            "radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)",
           maskImage:
-            "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
+            "radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)",
         }}
       />
 
