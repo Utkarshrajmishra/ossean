@@ -90,12 +90,12 @@ const socials = [
 ];
 
 
-const Social=()=>{
+const Profile=()=>{
     return(
         <Container>
             <section className="font-gist flex flex-col items-center gap-4">
-                <h1 className="text-4xl mt-12 text-neutral-800 font-bold font-gist text-center">Which platforms are you one?</h1>
-                <p className="text-neutral-500">Pick upto 2 to get started. You can update at any time</p>
+                <h1 className="text-4xl  mt-12 text-neutral-800 font-bold font-gist text-center">Add profile deatils</h1>
+                <p className="text-neutral-500">Add your profile image, name and bio.</p>
                 <div className="grid grid-cols-4 gap-10 mt-8">
                 {
                     socials?.map((item, index)=>(
@@ -115,4 +115,4 @@ const Social=()=>{
     )
 }
 
-export default Social
+export default Profile
