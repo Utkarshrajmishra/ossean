@@ -22,7 +22,7 @@ export const authOptions = {
              return true;
             }
           await prisma.account.create({
-            data: { name, email, image },
+            data: { name, email },
           });
         }
         (user as any).isNewUser=true;

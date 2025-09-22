@@ -18,7 +18,6 @@ model Account{
   id String @default(uuid()) @unique @id
   name String
   email String @unique
-  image String?
 
   User User[]
 }
@@ -30,6 +29,7 @@ model User{
   bio String?
   buttonStyle String @default("rounded-md")
   theme Int @default(1)
+    image String?
 
   Link Link[]
 }
