@@ -30,7 +30,7 @@ const Register = () => {
             <Input
               type="text"
               placeholder="mandarin"
-              className="h-12 rounded-lg text-black text-left  border border-neutral-300 focus:ring-2 focus:ring-neutral-400 focus:outline-none transition"
+              className="h-12 rounded-lg placeholder:text-neutral-400  bg-neutral-100 text-black text-left  border border-neutral-300 ring-none outline-none transition"
             />
 
 

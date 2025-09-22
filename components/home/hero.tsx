@@ -1,7 +1,9 @@
+"use client"
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
 import Container from "./container";
 import HeroImage from "../../public/image.png";
+import { signOut } from "next-auth/react";
 
 const Hero = () => {
   return (
@@ -26,7 +28,7 @@ const Hero = () => {
 
         {/* CTA button */}
         <div className="flex flex-col sm:flex-row gap-4">
-          <button className="bg-neutral-700 flex items-center justify-center gap-2 cursor-pointer text-white py-2.5 px-6 sm:py-3 sm:px-8 hover:bg-neutral-800 rounded-full text-sm sm:text-base">
+          <button onClick={()=>signOut()} className="bg-neutral-700 flex items-center justify-center gap-2 cursor-pointer text-white py-2.5 px-6 sm:py-3 sm:px-8 hover:bg-neutral-800 rounded-full text-sm sm:text-base">
             Create your ossean <ChevronRight className="size-5" />
           </button>
         </div>

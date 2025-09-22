@@ -1,7 +1,8 @@
 // components/LoginButton.tsx
 "use client";
 
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
+import { useEffect } from "react";
 
 
 const LoginButton = () => {
